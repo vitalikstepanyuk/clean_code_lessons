@@ -1,11 +1,15 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test-lection3": "node --experimental-vm-modules node_modules/jest/bin/jest.js lection3/homework/date.test.js",
+    "test-lection3-vitest": "vitest run --config vitest.config.mjs"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "vitest": "^4.1.8"
   },
   "dependencies": {
     "jssm": "^5.104.1"
-  }
+  },
+  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
 }
