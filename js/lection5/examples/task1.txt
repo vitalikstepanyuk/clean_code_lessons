@@ -1,0 +1,8 @@
+You have got into a dungeon and see a man-made tunnel on the left and a small cave on the right.
+There is a rusty mine car in the tunnel without any signs of use for years whereas the cave has some strange footprints leading inside...
+---
+1 - Use the mine car
+2 - Walk into the tunnel on foot
+3 - Follow the footprints inside the cave
+---
+10
