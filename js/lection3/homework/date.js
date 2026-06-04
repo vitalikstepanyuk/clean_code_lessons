@@ -2,7 +2,7 @@
 
 // Value object: encapsulates everything that depends on the year itself
 // (leap-year rule and the resulting month lengths).
-class Year {
+export class Year {
     constructor(value) {
         this.value = value;
     }
@@ -33,7 +33,7 @@ class Year {
 }
 
 // Value object representing a calendar date and knowing how to format itself.
-class CalendarDate {
+export class CalendarDate {
     constructor(year, month, day) {
         this.year = year;
         this.month = month;
@@ -71,8 +71,6 @@ class CalendarDate {
 }
 
 // Backward-compatible functional facade kept for the existing API.
-function date(year, day) {
+export function date(year, day) {
     return CalendarDate.fromDayOfYear(year, day).toString();
 }
-
-module.exports = { date, CalendarDate, Year };

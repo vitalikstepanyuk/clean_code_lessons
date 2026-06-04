@@ -1,4 +1,4 @@
-const { date, CalendarDate, Year } = require('./date.js');
+import { date, CalendarDate, Year } from './date.js';
 
 // Original tests used `toBe((2023, 1, 1))`, which the comma operator collapses
 // to `toBe(1)`. They are rewritten to assert the real YYYY-MM-DD output.
